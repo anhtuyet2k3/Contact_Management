@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/editSearchUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Tìm kiếm"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:textSize="19dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            >
+            <ImageButton
+                android:id="@+id/btnSearchClearUnit"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvUnit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:divider="@null" />
+    <ImageButton
+        android:id="@+id/btn_addUnit"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+</LinearLayout>

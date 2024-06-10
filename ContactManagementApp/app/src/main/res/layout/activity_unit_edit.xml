@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addEmployeeActivity"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgCloseUnit"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@null"
+            android:layout_marginLeft="17dp"
+            app:srcCompat="@drawable/ic_close_add"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/titleEditUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sửa liên hệ đơn vị"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imgSave"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="17dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_tick"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <com.example.contactmanagementapp.Circle
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ip_radius" >
+        <TextView
+            android:id="@+id/txTen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Tên đơn vị"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/editTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Tên đơn vị"
+            android:paddingStart="20dp"
+            android:layout_marginStart="2dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ip_radius">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Di động"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editSDT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Số điện thoại"
+            android:paddingStart="20dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingEnd="16dp"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" /> <!-- Thêm thuộc tính này nếu cần -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ip_radius" >
+        <TextView
+            android:id="@+id/txEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Email"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Email"
+            android:layout_marginStart="35dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ip_radius" >
+        <TextView
+            android:id="@+id/txtWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Website"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/editWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Website"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:layout_marginStart="16dp"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ip_radius" >
+        <TextView
+            android:id="@+id/txDiachi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Địa chỉ"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/editDiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Địa chỉ"
+            android:layout_marginStart="25dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ip_radius" >
+        <TextView
+            android:id="@+id/txDVC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Đơn vị cha"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:id="@+id/editDVC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Đơn vị cha"
+            android:paddingStart="20dp"
+            android:paddingEnd="16dp"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnDeleteUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa liên hệ"
+            android:textColor="#D70004"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+</LinearLayout>
